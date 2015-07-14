@@ -480,7 +480,7 @@ p.postDesc span{
   }
 }
 
-#nav .navbar>.container-fluid .navbar-brand {
+.navbar>.container-fluid .navbar-brand {
   margin-top: 0px;
   padding-top: 12px;
   padding-left: 0px;
