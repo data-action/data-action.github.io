@@ -480,12 +480,6 @@ p.postDesc span{
   }
 }
 
-.navbar>.container-fluid .navbar-brand {
-  margin-top: 0px;
-  padding-top: 12px;
-  padding-left: 0px;
-}
-
 .navbar-default .navbar-collapse {
   background-color: #333;
 }
