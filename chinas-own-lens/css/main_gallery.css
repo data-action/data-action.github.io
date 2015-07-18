@@ -82,7 +82,7 @@ html, body {
 }
 
 .imageContainer{
-  width: 100%;
+  width: 100% !important;
   height: 100%;
 
   /*margin: 0 auto;*/
@@ -92,10 +92,14 @@ html, body {
   padding: 20px;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
 .pagination{
   width: 100%;
   height: auto;
   position: relative;
+  display: inline;
   margin: 5%;
 }
 .item {
@@ -104,10 +108,10 @@ html, body {
   /*-webkit-transition: all 0.0s;
   transition: all 0.0s;*/
   border-radius: 5px;
-  width: 392px;
+  width: 438px;
   color: #d72928;
   /*padding: 8px;*/
-  margin: 4px;
+  margin: 6px;
   background: #383838;
   /*position: absolute;*/
   float: left;

@@ -1,6 +1,6 @@
 var testdata = null;
 var $container = null;
-var picsPerPage = 30;
+var picsPerPage = 50;
 var $body = $("body");
 
 $(document).ajaxStart(function() {
@@ -84,7 +84,7 @@ var populateImageElements = function(features) {
 
 		// only lazy load after the first N	
 		var imgSrcAttr;
-		if (index < 50) { //temp turn off lazy load
+		if (index < 100) { //temp turn off lazy load
 			imgSrcAttr = "src='" + fileName + "'";
 			
 		} else {
@@ -110,7 +110,7 @@ var populateImageElements = function(features) {
 	$(".imageContainer img").lazyload({
 	    event : 'scroll',
 	    effect : "fadeIn",
-	    threshold:100,
+	    threshold:200,
 
 	    load:function(a,b,c){
 	
@@ -136,7 +136,7 @@ var initializeGallery = function() {
 	 	transitionDuration: 0,
 	 	percentPosition: true,
 	 	masonry: {
-	  		columnWidth: 400,
+	  		columnWidth: 450,
 	  		isFitWidth: true
 	 	}
 	});
