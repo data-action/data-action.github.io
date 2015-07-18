@@ -1,6 +1,6 @@
 var testdata = null;
 var $container = null;
-var picsPerPage = 50;
+var picsPerPage = 30;
 var $body = $("body");
 
 $(document).ajaxStart(function() {
@@ -84,11 +84,12 @@ var populateImageElements = function(features) {
 
 		// only lazy load after the first N	
 		var imgSrcAttr;
-		if (index < 20) { //temp turn off lazy load
+		if (index < 50) { //temp turn off lazy load
 			imgSrcAttr = "src='" + fileName + "'";
 			
 		} else {
-		 	imgSrcAttr = "data-original='" + fileName + "'";
+			imgSrcAttr = "src='" + fileName + "'";
+		 	// imgSrcAttr = "data-original='" + fileName + "'";
 		}
 		
 		var extraAttribs = value.properties.City + " " + value.properties.Category + " " + value.properties.Index + "' id=" + value.properties.Index;
@@ -109,7 +110,7 @@ var populateImageElements = function(features) {
 	$(".imageContainer img").lazyload({
 	    event : 'scroll',
 	    effect : "fadeIn",
-	    threshold:200,
+	    threshold:100,
 
 	    load:function(a,b,c){
 	
