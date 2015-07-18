@@ -123,7 +123,7 @@ html, body {
 .item img:hover {
   outline: 5px solid #d72928;
   
-  outline-offset: -5px;
+  outline-offset: -4px;
   }
 
 .isotope-item {
