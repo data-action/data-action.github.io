@@ -120,6 +120,11 @@ html, body {
   width: 100%;
   height: auto;
 }
+.item img:hover {
+  outline: 5px solid #d72928;
+  
+  outline-offset: -5px;
+  }
 
 .isotope-item {
     z-index: 2;
