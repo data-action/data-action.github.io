@@ -82,7 +82,7 @@ html, body {
 }
 
 .imageContainer{
-  width: 100% !important;
+  width: 98% !important;
   height: 100%;
 
   /*margin: 0 auto;*/
@@ -99,7 +99,6 @@ html, body {
   width: 100%;
   height: auto;
   position: relative;
-  display: inline;
   margin: 5%;
 }
 .item {

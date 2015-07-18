@@ -107,16 +107,16 @@ var populateImageElements = function(features) {
   		if(this.complete) $(this).load();
 	});
 
-	$(".imageContainer img").lazyload({
-	    event : 'scroll',
-	    effect : "fadeIn",
-	    threshold:200,
+	// $(".imageContainer img").lazyload({
+	//     event : 'scroll',
+	//     effect : "fadeIn",
+	//     threshold:200,
 
-	    load:function(a,b,c){
+	//     load:function(a,b,c){
 	
-	    	$('.imageContainer').isotope('layout');
-	    }
-	 });
+	//     	$('.imageContainer').isotope('layout');
+	//     }
+	//  });
 };
 
 var layoutItems = function() {
